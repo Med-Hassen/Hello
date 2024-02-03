@@ -1,0 +1,149 @@
+*{
+    font-family: Tahoma, Verdana, sans-serif;
+     
+}
+body{
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(sunset.png);
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+
+header {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(220deg,#6200ff,#e03838,black) ;
+    padding: 10px 10px;
+  }
+  
+ 
+  header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    filter: drop-shadow(0 5px 0  #b630301e);
+    border-radius: 25px;
+
+
+  }
+  
+  header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  header a:hover {
+    background-color: #c23333;
+    color: black;
+  }
+  
+  header a.active {
+    background-color: rgb(219, 78, 23);
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  header-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+nav .table{
+  position: relative;
+  margin: 5px 0;
+  padding: 2px;
+  background-color: rgb(19, 15, 12);
+  border-radius: 10px;  
+  width: max-content;
+  filter: drop-shadow(
+    15px 15px 15px #000000d5);
+    justify-content: center;
+    align-items: center;
+   
+  
+}
+a{
+  display: block;
+  margin: 25px 4px;
+  font-size: larger;
+  color: #6200ff;
+  
+}
+a:focus{
+  color: #c23333;
+}
+main{
+  position: relative;
+  bottom: 273px;
+  left: 90px;
+  margin: 5px 0;
+  padding: 12px;
+  border-radius: 10px;  
+  width: max-content;
+  filter: drop-shadow(
+    25px 25px 25px #000000);
+  background: #000000af;
+  height: 60%;
+  width: 92%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
+  text-align: center;
+}
+.index1 {
+  display: block;
+  font-size: 1.3rem;
+  color: #0070f086;
+  width: 150px;
+  border-right: 2px solid ;
+  border-right-color:rgb(104, 114, 255) ;
+}
+h4:hover{
+  color: azure;
+  filter: drop-shadow(
+    5px 5px 5px #ffffffd5);
+}
+.video{
+  
+  color: #6200ff;
+}
+h1 , p {
+  color: #387dfdb0;
+}
+h1 {
+  animation: blink 12s ;
+  background: linear-gradient(110deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: xxx-large;
+}
+ 
+ p {
+  animation: blink 20s  0.5s;
+  background: linear-gradient(320deg, #20d37adc, #0d022c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: larger;
+ }
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+  
+}
